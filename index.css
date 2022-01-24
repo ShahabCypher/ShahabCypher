@@ -1,0 +1,551 @@
+* {
+		padding: 0;
+		margin: 0;
+}
+
+body {
+		color: #FFF;
+		background: #000;
+}
+
+/* navigation */
+
+nav {
+		top: 0;
+		width: 100%;
+		height: 4em;
+		display: flex;
+		justify-content: space-between;
+}
+
+.bar {
+		background: #000;
+		width: 100%;
+		height: 100%;
+}
+
+.bar h1 {
+	 color: #ffb200;
+	 font-size: 40px;
+	 height: 4rem;
+	 line-height: 4rem;
+	 padding-left: 25px;
+	 font-weight: 100;
+}
+
+.barbtn {
+		text-align: center;
+		top: 0;
+		right: 5px;
+		padding-right: 25px;
+		position: absolute;
+		line-height: 4rem;
+		font-size: 40px;
+		align-items: center;
+		align-self: center;
+		width: 40px;
+		height: 40px;
+		color: #ffb200;
+}
+
+.barText {
+		display: none;
+}
+
+.menu {
+		background: #000;
+		top: 4em;
+		display: flex;
+		height: 150px;
+		width: 100%;
+		position: absolute;
+		justify-content: center;
+		text-align: center;
+		z-index: 0;
+		left: 0;
+}
+
+.clicked {
+		transform: translateY(100px);
+		transition-delay: 0s;
+}
+
+.menu li {
+		list-style: none;
+		padding-top: 30px;
+}
+
+.menu li a {
+		text-decoration: none;
+		color: #ffb200;
+		font-size: 25px;
+		font-family: 'Patua One', cursive;
+}
+
+.menu li a:hover {
+		color: #ffb000;
+}
+
+#hvttext {
+		color: #00eaff;
+		font-family: 'Luxurious Roman', cursive;
+		letter-spacing: 1px;
+		font-weight: 600;
+}
+
+.persian {
+		font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+a {
+		text-decoration: none;
+}
+
+/* header */
+
+header {
+		text-align: center;
+		word-wrap: break-word;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.info {
+		width: 85%;
+		padding-top: 100px;
+}
+
+header h1 {
+		font-family: 'Merienda', cursive;
+		color: #000;
+		font-size: 40px;
+}
+
+header p {
+		padding-top: 20px;
+		color: #000;
+}
+
+.avatar {
+		width: 150px;
+		height: auto;
+		border-radius: 50%;
+		border: 5px solid #000;
+		margin-bottom: 20px;
+}
+
+.headArea {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+}
+
+.head {
+		background: url("../img/header.svg");
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		transition: transform 0.2s linear;
+}
+
+.headerWave {
+		width: 100%;
+}
+
+/* skills part */
+
+.skillsPart h1 {
+		text-align: right;
+		padding-right: 30px;
+		font-family: 'Harmattan', sans-serif;
+		font-size: 30px;
+		font-weight: 500;
+}
+
+.skillsPart i {
+		color: #ffb200;
+		font-size: 25px;
+}
+
+.progress0 {
+		background: #ddd;
+		margin-top: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
+		position: relative;
+		height: 10px;
+		width: 90%;
+		border-radius: 10px;
+}
+
+.pythonProg {
+		background: #0081ff;
+		border-radius: 10px 0 0 10px;
+		pposition: absolute;
+		height: 100%;
+		width: 90%;
+}
+
+.skill {
+		margin-top: 10px;
+}
+
+.skillText h4 {
+		padding-left: 20px;
+		padding-top: 10px;
+		color: #ffb200;
+}
+
+.skillText h5 {
+		color: #ffb200;
+		text-align: right;
+		padding-right: 20px;
+}
+
+.jsProg {
+		background: #ffdc00;
+		border-radius: 10px 0 0 10px;
+		pposition: absolute;
+		height: 100%;
+		width: 40%;
+}
+
+.webProg {
+		background: #ff3400;
+		border-radius: 10px 0 0 10px;
+		pposition: absolute;
+		height: 100%;
+		width: 50%;
+}
+
+/* High Voltage */
+
+.highVoltage {
+		display: flex;
+		padding-top: 65px;
+		width: 100%;
+		align-items: center;
+		flex-direction: column;
+		position: block;
+}
+
+.highVoltage h1 {
+		color: #00eaff;
+		font-family: 'Luxurious Roman', cursive;
+		letter-spacing: 2px;
+		font-size: 40px;
+		padding-top: 15px;
+}
+
+.hvtimg {
+		width: 250px;
+		height: 250px;
+}
+
+.highVoltage p {
+		color: #ccc;
+		text-align: center;
+		font-family: 'Baloo Bhaijaan 2', cursive;
+		padding: 0 25px;
+		margin-top: 20px;
+		direction: rtl;
+}
+
+.joinArea {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100px;
+}
+
+.hvtbtn {
+		background: #00eaff;
+		border-radius: 30px;
+		padding: 10px 10px;
+		margin: 0 15px;
+		transition: padding 0.3s;
+		font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.hvtbtn:hover {
+		padding: 15px 15px;
+}
+
+.joinArea a {
+		color: #000;
+		text-decoration: none;
+}
+
+/* bots Area */
+
+.botsArea {
+		margin-top: 40px;
+}
+
+.botsArea h1 {
+		font-weight: 500;
+		text-align: right;
+		padding-right: 30px;
+}
+
+.botsArea h1 i {
+		color: #ffb200;
+		font-size: 25px;
+		padding-left: 10px;
+}
+
+.botsArea p {
+		color: #ccc;
+		text-align: center;
+		font-family: 'Baloo Bhaijaan 2', cursive;
+		padding: 0 25px;
+		margin-top: 20px;
+}
+
+.botsbtn {
+		background: #b900ff;
+		border-radius: 30px;
+		padding: 10px 10px;
+		margin: 0 15px;
+		transition: padding 0.3s;
+		font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.botsbtn:hover {
+		padding: 15px 15px;
+}
+
+/* footer */
+
+footer {
+		background: linear-gradient(to bottom, #000 0%, #ffb200 2%, #ffb200 100%);
+		position: relative;
+}
+
+footer .footerWave {
+		width: 100%;
+		position: absolute;
+		top: 0;
+}
+
+.footerText {
+		padding-top: 150px;
+		color: #000;
+		font-family: 'Harmattan', sans-serif;
+		font-size: 20px;
+		text-align: center;
+}
+
+.copyright {
+		font-size: 15px;
+}
+
+.heart {
+		color: #FF0000;
+		font-size: 15px;
+}
+
+.footerLinks {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+
+.footerLinks a {
+		text-decoration: none;
+		color: #000;
+		padding: 10px 5px;
+		transition: font-size 0.3s;
+}
+
+.footerLinks a:hover {
+		font-size: 23px;
+}
+
+/* responsive part */
+
+/* tablet and pc */
+@media screen and (min-width: 768px) {
+		
+		/* header */
+		
+		header h1 {
+				font-size: 50px;
+		}
+		
+		header p {
+				font-size: 25px;
+		}
+		
+		.avatar {
+				width: 200px;
+		}
+		
+		.info {
+				padding-top: 60px;
+		}
+		
+		/* nav bar */
+		.barbtn {
+				display: none;
+		}
+		
+		.barText {
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				right: 10px;
+				justify-content: center;
+				align-items: center;
+				height: 4em;
+		}
+		
+		.bar h1 {
+				padding-left: 50px;
+		}
+		
+		.barText ul {
+				display: flex;
+				list-style: none;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
+				padding-right: 20px;
+		}
+		
+		.barText li {
+				font-size: 23px;
+				padding: 0 1rem;
+		}
+		
+		.barText li a {
+				text-decoration: none;
+				color: #FFF;
+				font-family: 'Patua One', cursive;
+		}
+		
+		/* skills */
+		
+		.skillsPart h1 {
+				padding-right: 5%;
+				font-size: 45px;
+		}
+		
+		.progress0 {
+				margin: 0 10%;
+				width: 80%;
+		}
+		
+		.skillText h4 {
+				padding-left: 10%;
+				font-size: 25px;
+		}
+		
+		.skillText h5 {
+				padding-right: 10%;
+				padding-bottom: 10px;
+				font-size: 20px;
+		}
+		
+		/* High Voltage */
+		
+		.hvtimg {
+				width: 300px;
+				height: 300px;
+		}
+		
+		.highVoltage h1 {
+				font-size: 50px;
+		}
+		
+		.highVoltage p {
+				font-size: 25px;
+				padding: 0 20%;
+		}
+		
+		.hvtbtn {
+				padding: 15px 15px;
+				font-size: 20px;
+				border-radius: 40px;
+				margin-top: 40px;
+		}
+		
+		.hvtbtn:hover {
+				padding: 20px 20px;
+		}
+		
+		/* Bots Area */
+		
+		.botsArea {
+				margin-top: 70px;
+		}
+		
+		.botsArea h1 {
+				font-size: 45px;
+				padding-right: 5%;
+		}
+		
+		.botsArea h1 i {
+				font-size: 40px;
+		}
+		
+		.botsArea p {
+				font-size: 25px;
+				padding: 0 20%;
+		}
+		
+		.botsbtn {
+				padding: 15px 15px;
+				border-radius: 40px;
+				font-size: 20px;
+				margin: 0 40px;
+		}
+		
+		.botsbtn:hover {
+				padding: 20px 20px;
+		}
+		
+		/* footer */
+		
+		.footerText {
+				padding-top: 340px;
+				padding-bottom: 40px;
+				font-size: 25px;
+		}
+		
+		.copyright {
+				font-size: 20px;
+		}
+		
+		.heart {
+				font-size: 20px;
+		}
+		
+		.footerLinks a {
+				font-size: 25px;
+				padding: 15px 10px;
+		}
+		
+		.footerLinks a:hover {
+				font-size: 30px;
+		}
+}
+
+/* for 2500px and more (4K) */
+@media screen and (min-width: 2500px) {
+		body {
+				width: 1440px;
+				margin-left: 25%;
+				margin-right: 25%;
+		}
+		
+		.barText {
+				right: 20%;
+		}
+}
