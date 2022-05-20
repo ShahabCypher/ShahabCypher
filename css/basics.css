@@ -1,0 +1,104 @@
+nav {
+		position: fixed;
+		top: 0;
+		color: #fff;
+		width: 100%;
+		z-index: 1;
+}
+
+.link, a {
+		text-decoration: none;
+		color: inherit;
+		-webkit-tap-highlight-color: transparent;
+		-moz-tap-highlight-color: transparent;
+		-khtml-tap-highlight-color: transparent;
+		-ms-tap-highlight-color: transparent;
+		-o-tap-highlight-color: transparent;
+}
+
+.noCopy {
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+}
+
+.bar {
+		background: #111111;
+		display: flex;
+		flex-direction: row;
+		height: 65px;
+}
+
+.bar-shadow {
+		box-shadow: 0 10px 10px -10px #333333;
+}
+
+.bar h1 {
+		padding-left: 20px;
+		padding-bottom: 10px;
+		font-weight: 100;
+		font-size: 35px;
+}
+
+.barbtn {
+		font-size: 30px;
+		text-align: center;
+		height: inherit;
+		margin-right: 20px;
+		line-height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: auto;
+		order: 2;
+}
+
+.buttons {
+		background: #111111;
+		width: 100%;
+		height: 0;
+		overflow: hidden;
+		transition: 0.5s;
+		box-shadow: 0 10px 10px -10px #333333;
+}
+
+.nav-clicked {
+		height: 250px;
+}
+
+.navlink {
+		transition: color 0.3s;
+}
+
+.navlink:hover {
+		color: #ffb200;
+}
+
+.buttons ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		list-style: none;
+}
+
+.fa-text {
+		padding: 10px 0 10px 0;
+		font-family: 'Vazirmatn', sans-serif;
+}
+
+.en-text {
+		padding: 10px 0 10px 0;
+		font-family: 'Patua One', cursive;
+}
+
+
+/* for 2500px and more (4K) */
+@media screen and (min-width: 2500px) {
+		.bar {
+				width: 1440px;
+		}
+}
