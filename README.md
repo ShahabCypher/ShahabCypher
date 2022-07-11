@@ -2,7 +2,7 @@
 
 **Hi! Im *Cypher***
 
-I haved joined Discord **2 years ago** and currently Developing servers private bots
+I've joined Discord **3 years ago** and I'm currently Developing private bots
 
 ## High Voltage
 
@@ -10,8 +10,8 @@ High Voltage server is a persian public Discord server, we have media channels, 
 
 ## Private Bots
 
-as I sayed, I'm Developing private Bots for server, You can see Bots info and order them in High Voltage server
+as I said, I'm Developing private Bots for server, You can see Bots info and order them in High Voltage server
 
 ## Contact me
 
-You can contact me via Discord (end of the github page)
+You can contact me via Discord (at the end of the github page)
