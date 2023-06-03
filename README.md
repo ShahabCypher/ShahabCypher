@@ -2,7 +2,7 @@
 
 **Hi! Im *Cypher***
 
-I've joined Discord **3 years ago** and I'm currently Developing private bots
+I've joined Discord at **2019** and I'm currently Developing private bots
 
 ## High Voltage
 
