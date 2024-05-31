@@ -1,156 +1,72 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shahab Cypher</title>
+	<meta name="google-site-verification" content="ADmJETEEr6YyTR1dDXuCLxJlbV6s01CIChQdzZZWlVk" />
+	
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
 		
-		<title>Shahab Cypher</title>
+		@font-face {
+			font-family: 'Noto Sans Mono';
+			src:	url('./NotoSansMono.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+			text-rendering: optimizeLegibility;
+			font-display: auto;
+		}
 		
-		<link rel="stylesheet" href="./css/basics.css">
-		<link rel="stylesheet" href="./css/home.css">
+		html {
+			height: -webkit-fill-available;
+		}
 		
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="google-site-verification" content="ADmJETEEr6YyTR1dDXuCLxJlbV6s01CIChQdzZZWlVk" />
+		body {
+			background: linear-gradient(-45deg, #fdc830, #f37335);
+			background-size: 400% 400%;
+			animation: gradient 10s ease infinite;
+			min-height: 100vh;
+			min-height: -webkit-fill-available;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
 		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Harmattan&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+		@keyframes gradient {
+			0% {
+					background-position: 0% 50%;
+			}
+			50% {
+					background-position: 100% 50%;
+			}
+			100% {
+					background-position: 0% 50%;
+			}
+		}
 		
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<script src="https://kit.fontawesome.com/b5cae73c36.js" crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="./js/main.js"></script>
+		#update {
+			margin-bottom: 20px;
+		}
 		
+		h1 {
+			font-family: "Noto Sans Mono";
+		}
+		
+	</style>
+	
 </head>
 <body>
-		<nav>
-				<div class="bar bar-shadow" id="bar">
-						<h1 class="noCopy">𝕮𝖞𝖕𝖍𝖊𝖗</h1>
-						<a id="barbtn" class="barbtn link" href="#"><i class="fas fa-bars"></i></a>
-				</div>
-				<div id="buttons" class="buttons link">
-						<ul>
-								<li class="fa-text navlink"><a id="dude" href="#about">درباره</a></li>
-								<li class="fa-text navlink"><a href="#skills">مهارت های من</a></li>
-								<li class="fa-text navlink"><a href="#bots">ربات های اختصاصی</a></li>
-								<li class="en-text navlink"><a href="#hvt">High Voltage</a></li>
-								<li class="fa-text navlink"><a href="#contact">ارتباط با من</a></li>
-						</ul>
-				</div>
-		</nav>
-		<header id="about">
-				<img class="avatar" src="./img/avatar.jpg" alt="Cypher"></img>
-				<div class="head-text">
-						<h1>Shahab Cypher</h1>
-						<p class="fa-font">سلام! سایفر هستم<br>برنامه نویسی رو از ربات های دیسکورد شروع کردم و الان بیشتر از یک ساله که برنامه نویسی میکنم</p>
-				</div>
-				<div class="head-wave"></div>
-		</header>
-		<section class="cypher reveal">
-				<div class="cypherTitle">
-						<span class="noCopy">𝕮</span>
-						<h1 dir="rtl">چرا ShahabCypher ؟</h1>
-				</div>
-				<p class="fa-font">من نام مستعار خودم رو "سایفر" انتخاب کردم<br>سایفر یک الگوریتم کد گذاری هستش که در اون حروف با اشکال خاصی جایگزین میشن</p>
-				<a class="fa-font" href="https://fa.m.wikipedia.org/wiki/%D8%B3%D8%A7%DB%8C%D9%81%D8%B1">(برای اطلاعات بیشتر کلیک کنید)</a>
-		</section>
-		<section class="skills" id="skills">
-				<div class="reveal" id="skillDiv">
-						<div class="skillsTitle">
-								<i class="fa-solid fa-laptop-code"></i>
-								<h1>مهارت های من</h1>
-						</div>
-						<div class="skillsPart">
-								<div>
-										<div class="skillsText">
-												<h2><i class="fa-brands fa-python"></i> Python</h2>
-												<h3>90%</h3>
-										</div>
-										<div class="progress0">
-												<div id="py" class="pyProg"></div>
-										</div>
-								</div>
-								<div class="skill">
-										<div class="skillsText">
-												<h2><i class="fa-brands fa-js-square"></i> JavaScript</h2>
-												<h3>60%</h3>
-										</div>
-										<div class="progress0">
-												<div id="js" class="jsProg"></div>
-										</div>
-								</div>
-								<div class="skill">
-										<div class="skillsText">
-												<h2><i class="fa-solid fa-file-code"></i> HTML & CSS</h2>
-												<h3>50%</h3>
-										</div>
-										<div class="progress0">
-												<div id="web" class="webProg"></div>
-										</div>
-								</div>
-						</div>
-				</div>
-		</section>
-		<section class="bots reveal" id="bots">
-				<div class="botsTitle">
-						<i class="fa-solid fa-robot"></i>
-						<h1>ربات های اختصاصی</h1>
-				</div>
-				<p class="fa-font">در حال حاضر بیشتر پروژه های من در زمینه ربات های اختصاصی شبکه های اجتماعی است<br>برای ارتباط با من در این باره میتونید از روش های زیر اقدام کنید</p>
-				<div class="botsButtons link">
-						<a href="https://discordapp.com/users/654402138700644372" class="botButton">Discord</a>
-						<a href="https://parscoders.com/resume/340299/%D8%B4%D9%87%D8%A7%D8%A8-%D9%82%D8%A7%D8%B3%D9%85%DB%8C" class="botButton">ParsCoders</a>
-				</div>
-		</section>
-		<section id="hvt" class="hvt reveal">
-				<div class="hvtTitle">
-						<img src="./img/hvt.png" alt="High Voltage"></img>
-						<h1>High Voltage</h1>
-				</div>
-				<p class="fa-font">سرور دیسکورد High Voltage به عنوان یک سرور پابلیک مدت زیادیه که در حال فعالیته<br>برنامه های بسیار متنوع و جذابی در سرور اجرا میشه و دارای بخش مینی گیم های اختصاصی هست که خیلی پرطرفدار هستن!<br>حتما اطلاعات سرور رو بخونید و به سرور یه سر بزنید</p>
-				<div class="hvtButtons">
-						<a class="hvtButton link" href="http://discord.gg/FKNYJE4">پیوستن به سرور</a>
-						<a class="hvtButton link" href="./HighVoltage.html">اطلاعات سرور</a>
-				</div>
-		</section>
-		<footer class="reveal">
-				<div id="contact" class="contact">
-						<h1><i class="fa-solid fa-message"></i> ارتباط با من</h1>
-						<form
-								action="https://formspree.io/f/xbjwqeyd"
-								method="POST">
-								<label>
-										<input required placeholder="نام" class="Form name fa-font" type="name" name="name">
-								</label>
-								<label>
-										<input required placeholder="ایمیل" class="Form email fa-font" type="email" name="email">
-								</label>
-								<label>
-										<textarea required placeholder="متن پیام" class="Form msg fa-font" name="message"></textarea>
-								</label>
-								<div class="submit">
-										<button class="btn Form fa-font" type="submit">ارسال</button>
-								</div>
-						</form>
-				</div>
-				<div class="footerLinks link">
-						<a href="https://discordapp.com/users/654402138700644372"><i class="fab fa-discord"></i></a>
-						<a href="https://github.com/ShahabCypher"><i class="fab fa-github"></i></a>
-						<a href="https://instagram.com/shahabcypher?utm_medium=copy_link"><i class="fab fa-instagram"></i></a>
-						<a href="http://telegram.me/ShahabCypher"><i class="fab fa-telegram"></i></a>
-				</div>
-				<div id="copyright" class="copyright">
-						&copy; CopyRight <span id="year"></span> | All Rights Reserved<br>Made with <i class="fas fa-heart heart"></i> By Cypher :)
-						<script>
-								document.getElementById('year').innerHTML = new Date().getFullYear()
-						</script>
-				</div>
-		</footer>
+	
+	<svg id="update" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+		<path d="M 25 5 C 14.351563 5 5.632813 13.378906 5.054688 23.890625 C 5.007813 24.609375 5.347656 25.296875 5.949219 25.695313 C 6.550781 26.089844 7.320313 26.132813 7.960938 25.804688 C 8.601563 25.476563 9.019531 24.828125 9.046875 24.109375 C 9.511719 15.675781 16.441406 9 25 9 C 29.585938 9 33.699219 10.925781 36.609375 14 L 34 14 C 33.277344 13.988281 32.609375 14.367188 32.246094 14.992188 C 31.878906 15.613281 31.878906 16.386719 32.246094 17.007813 C 32.609375 17.632813 33.277344 18.011719 34 18 L 40.261719 18 C 40.488281 18.039063 40.71875 18.039063 40.949219 18 L 44 18 L 44 8 C 44.007813 7.460938 43.796875 6.941406 43.414063 6.558594 C 43.03125 6.175781 42.511719 5.964844 41.96875 5.972656 C 40.867188 5.988281 39.984375 6.894531 40 8 L 40 11.777344 C 36.332031 7.621094 30.964844 5 25 5 Z M 43.03125 23.972656 C 41.925781 23.925781 40.996094 24.785156 40.953125 25.890625 C 40.488281 34.324219 33.558594 41 25 41 C 20.414063 41 16.304688 39.074219 13.390625 36 L 16 36 C 16.722656 36.011719 17.390625 35.632813 17.753906 35.007813 C 18.121094 34.386719 18.121094 33.613281 17.753906 32.992188 C 17.390625 32.367188 16.722656 31.988281 16 32 L 9.71875 32 C 9.507813 31.96875 9.296875 31.96875 9.085938 32 L 6 32 L 6 42 C 5.988281 42.722656 6.367188 43.390625 6.992188 43.753906 C 7.613281 44.121094 8.386719 44.121094 9.007813 43.753906 C 9.632813 43.390625 10.011719 42.722656 10 42 L 10 38.222656 C 13.667969 42.378906 19.035156 45 25 45 C 35.648438 45 44.367188 36.621094 44.945313 26.109375 C 44.984375 25.570313 44.800781 25.039063 44.441406 24.636719 C 44.078125 24.234375 43.570313 23.996094 43.03125 23.972656 Z"></path>
+	</svg>
+	
+	<h1>Updating</h1>
+	
 </body>
 </html>
