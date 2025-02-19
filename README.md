@@ -2,7 +2,7 @@
 
 **Hey! I'm *Cypher*** 👋  
 
-I started my **development career** in **2019** when I joined Discord, initially focusing on creating **private Discord bots**. Since then, my passion for development has expanded, and I now also specialize in **web development**, working with **Python & Django** on the backend, and **Next.js & React.js** on the frontend.  
+I started my **development career** in **2019** when I joined Discord, initially focusing on creating **private Discord bots** to enhance server experiences. Since then, my passion for development has expanded, and I now also specialize in **web development**, working with **Python & Django** on the backend, and **Next.js & React.js** on the frontend.  
 
 ## 💻 What I Do  
 
