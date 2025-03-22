@@ -9,7 +9,7 @@ I started my **development career** in **2019** when I joined Discord, initially
 I'm a **developer** specializing in:  
 - 🤖 **Discord & Telegram bot development** 
 - 🌐 **Web development** (Full-stack)  
-  - **Backend:** Python & Django ![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)
+  - **Backend:** Python Django ![Python](https://img.shields.io/badge/python-3670A0?logo=python&logoColor=ffdd54)
   - **Frontend:** Next.js & React.js ![Next JS](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361DAFB) 
   - **Styling:** Tailwind CSS ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?logo=tailwind-css&logoColor=white)
 
