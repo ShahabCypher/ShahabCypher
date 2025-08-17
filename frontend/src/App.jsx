@@ -1,10 +1,13 @@
-import Layout from "./layout/Layout";
+import Layout from "layout/Layout";
+import ThemeProvider from "contexts/ThemeContext";
 
 const App = () => {
   return (
-    <Layout>
-      <h1>Cypher</h1>
-    </Layout>
+    <ThemeProvider>
+      <Layout>
+        <h1>Cypher</h1>
+      </Layout>
+    </ThemeProvider>
   );
 };
 
