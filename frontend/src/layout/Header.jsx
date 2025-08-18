@@ -27,9 +27,9 @@ const Header = () => {
   );
 
   return (
-    <nav className="flex justify-between items-center h-20 dark:bg-void-black select-none relative">
+    <nav className="relative flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-10px] shadow-matrix-green">
       {/* Logo */}
-      <h1 className="text-3xl font-bold ml-4 md:ml-10 z-40 w-30">
+      <h1 className="text-3xl font-bold ml-4 md:ml-10 z-20 w-30">
         <Link to="/">Cypher</Link>
       </h1>
 
@@ -64,7 +64,7 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-white dark:bg-black bg-opacity-50 z-30 md:hidden"
+          className="fixed inset-0 bg-white/50 dark:bg-black/50 z-30 md:hidden"
           onClick={close}
           aria-hidden="true"
         />
