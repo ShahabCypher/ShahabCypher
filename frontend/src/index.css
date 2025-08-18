@@ -27,9 +27,11 @@
   line-height: 1.5;
   font-weight: 400;
   color: #24292f;
+  border-color: #d1d9e0;
 }
 
 :root.dark {
   background-color: #0d1117;
   color: #f0f6fc;
+  border-color: #30363d;
 }

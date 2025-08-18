@@ -45,7 +45,7 @@ const Header = () => {
       {/* Desktop Theme Toggle */}
       <button
         onClick={toggleTheme}
-        className="hidden md:block mr-4 md:mr-10 cursor-pointer hover:text-cyber-blue transition-colors duration-200"
+        className="hidden md:block mr-4 md:mr-10 cursor-pointer transition-colors duration-200"
         aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
       >
         {theme === "dark" ? <Sun size={30} /> : <Moon size={30} />}
@@ -64,7 +64,7 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          className="fixed inset-0 bg-white dark:bg-black bg-opacity-50 z-30 md:hidden"
           onClick={close}
           aria-hidden="true"
         />
