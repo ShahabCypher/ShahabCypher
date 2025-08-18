@@ -27,7 +27,7 @@ const Header = () => {
   );
 
   return (
-    <nav className="sticky top-0 flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-8px] shadow-professional-blue dark:shadow-cyber-blue">
+    <nav className="sticky top-0 flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-8px] shadow-professional-blue dark:shadow-cyber-blue z-50">
       {/* Logo */}
       <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider">
         <Link to="/">Cypher</Link>
