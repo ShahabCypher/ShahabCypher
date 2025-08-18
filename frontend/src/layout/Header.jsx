@@ -20,14 +20,14 @@ const Header = () => {
     <Link
       to={to}
       onClick={onClick}
-      className="hover:text-cyber-blue transition-colors duration-200 block py-2 md:py-0"
+      className="hover:text-professional-blue dark:hover:text-cyber-blue transition-colors duration-200 block py-2 md:py-0"
     >
       {label}
     </Link>
   );
 
   return (
-    <nav className="sticky top-0 flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-10px] shadow-matrix-green">
+    <nav className="sticky top-0 flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-8px] shadow-professional-blue dark:shadow-cyber-blue">
       {/* Logo */}
       <h1 className="text-3xl font-bold ml-4 md:ml-10 z-20 w-30">
         <Link to="/">Cypher</Link>
