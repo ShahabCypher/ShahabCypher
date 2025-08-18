@@ -3,6 +3,24 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --color-void-black: #0d1117;
+  --color-card-dark: #161b22;
+  --color-cyber-blue: #00d9ff;
+  --color-matrix-green: #34e89e;
+  --color-soft-white: #f0f6fc;
+  --color-muted-gray: #8b949e;
+  --color-border-dark: #30363d;
+
+  /* Light Mode Colors */
+  --color-light-gray: #f6f8fa;
+  --color-professional-blue: #0366d6;
+  --color-success-green: #28a745;
+  --color-dark-gray: #24292f;
+  --color-medium-gray: #656d76;
+  --color-border-light: #d1d9e0;
+}
+
 :root {
   font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
