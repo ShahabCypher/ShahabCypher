@@ -26,6 +26,7 @@
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  box-sizing: border-box;
   color: #24292f;
   border-color: #d1d9e0;
 }

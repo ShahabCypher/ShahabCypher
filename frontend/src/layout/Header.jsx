@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <nav className="flex justify-between items-center h-20 dark:bg-void-black select-none relative">
       {/* Logo */}
-      <h1 className="text-3xl font-bold ml-4 md:ml-10 z-40">
+      <h1 className="text-3xl font-bold ml-4 md:ml-10 z-40 w-30">
         <Link to="/">Cypher</Link>
       </h1>
 
@@ -45,7 +45,7 @@ const Header = () => {
       {/* Desktop Theme Toggle */}
       <button
         onClick={toggleTheme}
-        className="hidden md:block mr-4 md:mr-10 cursor-pointer transition-colors duration-200"
+        className="hidden md:block mr-4 md:mr-10 md:ml-20 cursor-pointer transition-colors duration-200"
         aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
       >
         {theme === "dark" ? <Sun size={30} /> : <Moon size={30} />}
