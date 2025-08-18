@@ -54,7 +54,9 @@ const Header = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={toggle}
-        className="md:hidden mr-4 z-50 p-2 transition-colors duration-200"
+        className={`md:hidden mr-4 p-2 transition-colors duration-200 ${
+          isOpen ? "z-50" : "z-0"
+        }`}
         aria-label={isOpen ? "Close menu" : "Open menu"}
         aria-expanded={isOpen}
       >
@@ -80,18 +82,9 @@ const Header = () => {
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        <div className="flex flex-col h-full pt-24 px-6">
-          {/* Mobile Navigation Links */}
-          <ul className="flex flex-col gap-6 text-lg">
-            {navigationItems.map(({ to, label }) => (
-              <li key={to}>
-                <NavLink to={to} label={label} onClick={close} />
-              </li>
-            ))}
-          </ul>
-
+        <div className="flex flex-col h-full pt-24 px-6 relative">
           {/* Mobile Theme Toggle */}
-          <div className="mt-8 pt-6 border-t border-border-light dark:border-border-dark">
+          <div className="pt-7 absolute top-0">
             <button
               onClick={toggleTheme}
               className="flex items-center gap-3 text-lg cursor-pointer transition-colors duration-200"
@@ -103,6 +96,15 @@ const Header = () => {
               {theme === "dark" ? "Light Mode" : "Dark Mode"}
             </button>
           </div>
+
+          {/* Mobile Navigation Links */}
+          <ul className="flex flex-col gap-6 text-lg">
+            {navigationItems.map(({ to, label }) => (
+              <li key={to}>
+                <NavLink to={to} label={label} onClick={close} />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
