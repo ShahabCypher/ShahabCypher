@@ -4,21 +4,21 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-void-black: #0d1117;
-  --color-card-dark: #161b22;
-  --color-cyber-blue: #00d9ff;
-  --color-matrix-green: #34e89e;
-  --color-soft-white: #f0f6fc;
-  --color-muted-gray: #8b949e;
-  --color-border-dark: #30363d;
+  --color-void-black: #0d1117; /* Background */
+  --color-card-dark: #161b22; /* Card */
+  --color-cyber-blue: #00d9ff; /* Accent Primary */
+  --color-matrix-green: #34e89e; /* Accent Secondary */
+  --color-soft-white: #f0f6fc; /* Text Primary */
+  --color-muted-gray: #8b949e; /* Text Secondary */
+  --color-border-dark: #30363d; /* Border */
 
   /* Light Mode Colors */
-  --color-light-gray: #f6f8fa;
-  --color-professional-blue: #0366d6;
-  --color-success-green: #28a745;
-  --color-dark-gray: #24292f;
-  --color-medium-gray: #656d76;
-  --color-border-light: #d1d9e0;
+  --color-light-gray: #f6f8fa; /* Card */
+  --color-professional-blue: #0366d6; /* Accent Primary */
+  --color-success-green: #28a745; /* Accent Secondary */
+  --color-dark-gray: #24292f; /* Text Primary */
+  --color-medium-gray: #656d76; /* Text Secondary */
+  --color-border-light: #d1d9e0; /* Border */
 }
 
 :root {
@@ -26,21 +26,10 @@
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  color: #24292f;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: inherit;
-  color: inherit;
-}
-
-button,
-input,
-select {
-  font-family: inherit;
+:root.dark {
+  background-color: #0d1117;
+  color: #f0f6fc;
 }
