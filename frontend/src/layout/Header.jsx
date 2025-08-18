@@ -27,7 +27,7 @@ const Header = () => {
   );
 
   return (
-    <nav className="relative flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-10px] shadow-matrix-green">
+    <nav className="sticky top-0 flex justify-between items-center h-20 dark:bg-void-black select-none shadow-[0_10px_10px_-10px] shadow-matrix-green">
       {/* Logo */}
       <h1 className="text-3xl font-bold ml-4 md:ml-10 z-20 w-30">
         <Link to="/">Cypher</Link>
