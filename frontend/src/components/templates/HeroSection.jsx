@@ -1,11 +1,4 @@
-import {
-  ChevronDown,
-  Github,
-  ExternalLink,
-  Globe,
-  Bot,
-  Coffee,
-} from "lucide-react";
+import { Github, ExternalLink, Globe, Bot, Coffee } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {

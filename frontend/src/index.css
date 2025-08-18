@@ -11,7 +11,7 @@
   --color-matrix-green: #34e89e; /* Accent Secondary */
   --color-soft-white: #f0f6fc; /* Text Primary */
   --color-muted-gray: #8b949e; /* Text Secondary */
-  --color-border-dark: #30363d; /* Border */
+  --color-bdark: #30363d; /* Border */
 
   /* Light Mode Colors */
   --color-light-gray: #f6f8fa; /* Card */
