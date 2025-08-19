@@ -1,17 +1,10 @@
 import { useState } from "react";
-import { Database, Server, Bot, Layers, Monitor } from "lucide-react";
+
 import CategorySkills from "./CategorySkills";
+import CategorySelect from "./CategorySelect";
 
 const SkillsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  const categories = [
-    { name: "All", icon: <Layers /> },
-    { name: "Frontend", icon: <Monitor /> },
-    { name: "Backend", icon: <Server /> },
-    { name: "Bot", icon: <Bot /> },
-    { name: "Database", icon: <Database /> },
-  ];
 
   return (
     <div className="flex flex-col items-center justify-center mt-25 w-full">
@@ -29,20 +22,10 @@ const SkillsSection = () => {
       <div className="flex flex-col w-full">
         {/* Select Category */}
         <div className="flex items-center justify-center gap-5 mt-10 flex-wrap px-2">
-          {categories.map((category) => (
-            <button
-              key={category.name}
-              className={`px-4 py-2 rounded-xl font-medium transition-bg duration-300 flex items-center gap-2 ${
-                selectedCategory === category.name
-                  ? "bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green text-dark-gray shadow-lg shadow-professional-blue/25 dark:shadow-cyber-blue/25"
-                  : "bg-card-dark backdrop-blur-md border border-bdark text-gray-300 hover:bg-white/20 hover:text-white"
-              }`}
-              onClick={() => setSelectedCategory(category.name)}
-            >
-              {category.icon}
-              {category.name}
-            </button>
-          ))}
+          <CategorySelect
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+          />
         </div>
 
         {/* Skills */}
