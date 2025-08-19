@@ -7,7 +7,10 @@ const SkillsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (
-    <div className="flex flex-col items-center justify-center mt-25 w-full">
+    <section
+      id="stack"
+      className="flex flex-col items-center justify-center pt-25 w-full"
+    >
       <h1 className="text-4xl lg:text-5xl font-bold">
         My{" "}
         <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent">
@@ -33,7 +36,7 @@ const SkillsSection = () => {
           <CategorySkills selectedCategory={selectedCategory} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

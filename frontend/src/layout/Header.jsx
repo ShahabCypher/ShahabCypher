@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Moon, Sun, Menu, X } from "lucide-react";
 
@@ -10,20 +9,45 @@ const Header = () => {
   const { isOpen, toggle, close } = useMobileMenu();
 
   const navigationItems = [
-    { to: "/", label: "Home" },
-    { to: "/projects", label: "Projects" },
-    { to: "/about", label: "About" },
-    { to: "/contact", label: "Contact" },
+    { to: "#home", label: "Home" },
+    { to: "#stack", label: "Tech Stack" },
+    { to: "#projects", label: "Projects" },
+    { to: "#contact", label: "Contact" },
   ];
 
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.querySelector(targetId);
+    if (element) {
+      if (targetId === "#home") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        const elementRect = element.getBoundingClientRect();
+        const absoluteElementTop = elementRect.top + window.scrollY;
+        const middle = absoluteElementTop - 20;
+
+        window.scrollTo({
+          top: middle,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
+
   const NavLink = ({ to, label, onClick }) => (
-    <Link
-      to={to}
-      onClick={onClick}
+    <a
+      href={to}
+      onClick={(e) => {
+        handleSmoothScroll(e, to);
+        if (onClick) onClick();
+      }}
       className="hover:text-professional-blue dark:hover:text-cyber-blue transition-colors duration-200 block py-2 md:py-0"
     >
       {label}
-    </Link>
+    </a>
   );
 
   return (

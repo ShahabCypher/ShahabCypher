@@ -1,6 +1,5 @@
 import { ExternalLink, Globe, Bot, Coffee } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const techIcons = [
@@ -9,7 +8,10 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center lg:justify-around lg:min-h-[calc(100vh-5rem)] w-full">
+    <section
+      id="home"
+      className="flex flex-col lg:flex-row items-center lg:justify-around lg:min-h-[calc(100vh-5rem)] w-full"
+    >
       <div className="flex flex-col justify-center items-center h-full w-full lg:w-2/5">
         <h1 className="text-6xl lg:text-7xl font-bold my-15 lg:mt-0 select-none">
           I'm{" "}
@@ -34,12 +36,12 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <div className="flex items-center justify-center gap-4 mt-10 mb-15 lg:mb-0 w-full">
-          <Link
-            to="/projects"
+          <a
+            href="#projects"
             className="flex items-center gap-2 bg-success-green dark:bg-matrix-green text-white dark:text-dark-gray p-3 rounded-xl shadow-hero-card hover:shadow-success-green dark:hover:shadow-matrix-green transition-all duration-300"
           >
             <ExternalLink size={30} /> My Projects
-          </Link>
+          </a>
           <a
             href="https://github.com/ShahabCypher"
             target="_blank"
@@ -132,7 +134,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
