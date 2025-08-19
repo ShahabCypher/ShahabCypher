@@ -48,3 +48,8 @@
   color: #f0f6fc;
   border-color: #30363d;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
