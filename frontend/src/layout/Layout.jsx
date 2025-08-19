@@ -15,13 +15,13 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen max-w-screen-2xl mx-auto">
+    <div className="flex flex-col min-h-screen">
       {isLoading ? (
         <Loader />
       ) : (
         <>
           <Header />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow max-w-screen-2xl mx-auto">{children}</main>
           <Footer />
         </>
       )}
