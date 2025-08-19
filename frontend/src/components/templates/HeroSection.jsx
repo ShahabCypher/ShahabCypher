@@ -1,4 +1,5 @@
-import { Github, ExternalLink, Globe, Bot, Coffee } from "lucide-react";
+import { ExternalLink, Globe, Bot, Coffee } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -37,14 +38,14 @@ const HeroSection = () => {
             to="/projects"
             className="flex items-center gap-2 bg-success-green dark:bg-matrix-green text-white dark:text-dark-gray p-3 rounded-xl shadow-hero-card hover:shadow-success-green dark:hover:shadow-matrix-green transition-all duration-300"
           >
-            <ExternalLink /> My Projects
+            <ExternalLink size={30} /> My Projects
           </Link>
           <a
             href="https://github.com/ShahabCypher"
             target="_blank"
             className="flex items-center gap-2 bg-light-gray dark:bg-dark-gray p-3 rounded-xl shadow-hero-card hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-all duration-300"
           >
-            <Github /> Github
+            <FaGithub size={30} /> Github
           </a>
         </div>
       </div>
