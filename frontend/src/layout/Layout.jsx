@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
       ) : (
         <>
           <Header />
-          <main className="flex-grow max-w-screen-2xl mx-auto">{children}</main>
+          <main className="flex-grow max-w-screen mx-auto">{children}</main>
           <Footer />
         </>
       )}
