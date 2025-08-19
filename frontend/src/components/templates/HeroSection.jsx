@@ -54,7 +54,7 @@ const HeroSection = () => {
 
       <div className="w-full lg:w-3/5">
         <div className="flex justify-center items-center">
-          <div className="h-fit w-[90%] bg-white/5 backdrop-blur-md border border-blight dark:border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-500">
+          <div className="h-fit w-[90%] bg-light-gray dark:bg-white/5 backdrop-blur-md border border-blight dark:border-white/10 rounded-2xl p-5 hover:bg-white/10 hover:border-cyan-400/30 transition-all duration-300">
             {/* Experience Badge */}
             <div className="flex items-center gap-3 md:gap-4 mb-6 select-none">
               <div className="px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-professional-blue/20 to-success-green/20 dark:from-cyber-blue/20 dark:to-matrix-green/20 backdrop-blur-md border border-success-green/30 dark:border-matrix-green/30 rounded-xl">
