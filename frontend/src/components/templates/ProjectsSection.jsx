@@ -206,7 +206,7 @@ const ProjectsSection = () => {
                         {project.technologies.map((tech, index) => (
                           <span
                             key={index}
-                            className="px-2 py-1 bg-light-gray dark:bg-void-black text-xs font-medium text-professional-blue dark:text-cyber-blue rounded"
+                            className="px-2 py-1 bg-light-gray dark:bg-void-black text-xs font-medium text-professional-blue dark:text-cyber-blue rounded transition-all duration-300"
                           >
                             {tech}
                           </span>

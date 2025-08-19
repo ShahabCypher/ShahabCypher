@@ -186,7 +186,7 @@ const CategorySkills = ({ selectedCategory }) => {
   return (
     <>
       {filteredSkills.map((skill) => (
-        <div className="flex items-center lg:justify-center lg:flex-col gap-2 bg-light-gray dark:bg-card-dark p-2 rounded-lg shadow-base hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-shadow duration-300 select-none h-fit lg:h-30">
+        <div className="flex items-center lg:justify-center lg:flex-col gap-2 bg-light-gray dark:bg-card-dark p-2 rounded-lg shadow-base hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-all duration-300 select-none h-fit lg:h-30">
           {skill.icon}
           <span className="text-sm lg:text-base lg:font-medium lg:mt-2">
             {skill.name}

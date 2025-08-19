@@ -44,14 +44,14 @@ const Header = () => {
         handleSmoothScroll(e, to);
         if (onClick) onClick();
       }}
-      className="hover:text-professional-blue dark:hover:text-cyber-blue transition-colors duration-200 block py-2 md:py-0"
+      className="hover:text-professional-blue dark:hover:text-cyber-blue block py-2 md:py-0"
     >
       {label}
     </a>
   );
 
   return (
-    <nav className="sticky top-0 flex justify-between items-center h-20 bg-white dark:bg-void-black select-none shadow-[0_10px_10px_-8px] shadow-professional-blue dark:shadow-cyber-blue z-50">
+    <nav className="sticky top-0 flex justify-between items-center h-20 bg-white dark:bg-void-black select-none shadow-[0_10px_10px_-8px] shadow-professional-blue dark:shadow-cyber-blue z-50 transition-all duration-300">
       {/* Logo */}
       <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider">
         <Link to="/">Cypher</Link>
