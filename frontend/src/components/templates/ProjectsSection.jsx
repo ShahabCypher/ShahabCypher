@@ -108,6 +108,8 @@ const ProjectsSection = () => {
     }
   };
 
+  const scrollWidth = window.innerWidth > 1024 ? 160 : 40;
+
   return (
     <section
       id="projects"
@@ -116,14 +118,14 @@ const ProjectsSection = () => {
       {/* Header */}
       <div className="text-center mb-10">
         <h1 className="text-4xl lg:text-5xl font-bold mb-5">
-          Upcoming{" "}
+          My{" "}
           <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent">
             Projects
           </span>
         </h1>
         <p className="text-medium-gray dark:text-muted-gray text-center text-sm lg:text-base px-5 max-w-2xl mx-auto">
-          Exciting projects in development pipeline - from cutting-edge web
-          applications to intelligent automation systems.
+          A showcase of my development work - from full-stack web applications
+          to bot development projects.
         </p>
       </div>
 
@@ -131,14 +133,14 @@ const ProjectsSection = () => {
         {/* Desktop Navigation Buttons */}
         <button
           onClick={scrollLeft}
-          className="hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 bg-white dark:bg-card-dark rounded-full shadow-base shadow-white hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white dark:hover:text-dark-gray transition-all duration-300 text-professional-blue dark:text-cyber-blue"
+          className="hidden lg:flex absolute left-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 bg-white dark:bg-card-dark rounded-full shadow-base shadow-gray-400 dark:shadow-white hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white dark:hover:text-dark-gray transition-all duration-300 text-professional-blue dark:text-cyber-blue"
         >
           <ChevronLeft size={24} />
         </button>
 
         <button
           onClick={scrollRight}
-          className="hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 bg-white dark:bg-card-dark rounded-full shadow-base shadow-white hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white dark:hover:text-dark-gray transition-all duration-300 text-professional-blue dark:text-cyber-blue"
+          className="hidden lg:flex absolute right-4 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-12 h-12 bg-white dark:bg-card-dark rounded-full shadow-base shadow-gray-400 dark:shadow-white hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white dark:hover:text-dark-gray transition-all duration-300 text-professional-blue dark:text-cyber-blue"
         >
           <ChevronRight size={24} />
         </button>
@@ -150,10 +152,10 @@ const ProjectsSection = () => {
           style={{ scrollbarWidth: "none" }}
         >
           <div
-            className="flex gap-6 px-5 lg:px-20 pb-5"
+            className="flex items-stretch gap-6 px-5 py-2 lg:px-20 pb-5"
             style={{
               width: `${
-                projects.length * 320 + (projects.length - 1) * 24 + 160
+                projects.length * 320 + (projects.length - 1) * 24 + scrollWidth
               }px`,
             }}
           >
@@ -161,7 +163,7 @@ const ProjectsSection = () => {
               return (
                 <div
                   key={project.id}
-                  className="flex-shrink-0 w-80 bg-white dark:bg-card-dark rounded-xl shadow-xl dark:hover:shadow-cyber-blue/20 transition-all duration-300 group overflow-hidden"
+                  className="flex flex-col flex-shrink-0 w-80 h-[570px] bg-white dark:bg-card-dark rounded-xl shadow-base hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-all duration-300 group overflow-hidden"
                 >
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
@@ -182,7 +184,7 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Card Content */}
-                  <div className="p-6">
+                  <div className="flex flex-col flex-grow p-6">
                     {/* Title and Category */}
                     <div className="mb-4">
                       <h3 className="font-bold text-lg text-dark-gray dark:text-soft-white group-hover:text-professional-blue dark:group-hover:text-cyber-blue transition-colors mb-1">
@@ -213,7 +215,7 @@ const ProjectsSection = () => {
                     </div>
 
                     {/* Features */}
-                    <div className="mb-4">
+                    <div className="mb-4 flex-grow">
                       <h4 className="text-xs font-semibold text-medium-gray dark:text-muted-gray mb-2 uppercase tracking-wide">
                         Key Features
                       </h4>
@@ -230,7 +232,7 @@ const ProjectsSection = () => {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="flex gap-3">
+                    <div className="flex gap-3 mt-auto">
                       {project?.github && (
                         <a
                           href={project.github}
