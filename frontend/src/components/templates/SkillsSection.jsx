@@ -8,20 +8,20 @@ const SkillsSection = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-25 w-full">
-      <h1 className="text-4xl font-bold">
+      <h1 className="text-4xl lg:text-5xl font-bold">
         My{" "}
         <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent">
           Tech Stack
         </span>
       </h1>
-      <p className="text-medium-gray dark:text-muted-gray text-center text-sm px-5 mt-5">
+      <p className="text-medium-gray dark:text-muted-gray text-center text-sm lg:text-base px-5 mt-5">
         Expert in modern web development, API design, and automation systems -
         delivering solutions that scale from MVP to enterprise.
       </p>
 
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col lg:flex-row w-full">
         {/* Select Category */}
-        <div className="flex items-center justify-center gap-5 mt-10 flex-wrap px-2">
+        <div className="flex lg:flex-col items-center lg:items-start justify-center gap-5 mt-10 flex-wrap px-2 lg:mx-10 lg:w-1/5">
           <CategorySelect
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
@@ -29,7 +29,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills */}
-        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-5 mt-10 px-5">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-6 gap-5 mt-10 px-5 lg:w-4/5">
           <CategorySkills selectedCategory={selectedCategory} />
         </div>
       </div>

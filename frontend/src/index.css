@@ -26,7 +26,7 @@
   --shadow-base: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 
   /* Breakpoints */
-  /* --breakpoint-tab: 950px; */
+  --breakpoint-tab: 950px;
 }
 
 :root {
