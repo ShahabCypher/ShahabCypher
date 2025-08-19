@@ -1,18 +1,5 @@
 import { useState } from "react";
-import {
-  Database,
-  Globe,
-  Server,
-  Code2,
-  Bot,
-  Zap,
-  Layers,
-  Monitor,
-  Cloud,
-  GitBranch,
-  Smartphone,
-  Palette,
-} from "lucide-react";
+import { Database, Server, Bot, Layers, Monitor } from "lucide-react";
 import CategorySkills from "./CategorySkills";
 
 const SkillsSection = () => {
@@ -23,14 +10,7 @@ const SkillsSection = () => {
     { name: "Frontend", icon: <Monitor /> },
     { name: "Backend", icon: <Server /> },
     { name: "Bot", icon: <Bot /> },
-  ];
-
-  const skills = [
-    { category: "Frontend", name: "React", icon: <Code2 /> },
-    { category: "Frontend", name: "JavaScript", icon: <Code2 /> },
-    { category: "Frontend", name: "TypeScript", icon: <Code2 /> },
-    { category: "Frontend", name: "Tailwind CSS", icon: <Code2 /> },
-    { category: "Backend", name: "Node.js", icon: <Code2 /> },
+    { name: "Database", icon: <Database /> },
   ];
 
   return (
@@ -48,7 +28,7 @@ const SkillsSection = () => {
 
       <div className="flex flex-col w-full">
         {/* Select Category */}
-        <div className="flex items-center justify-center gap-5 mt-10 flex-wrap">
+        <div className="flex items-center justify-center gap-5 mt-10 flex-wrap px-2">
           {categories.map((category) => (
             <button
               key={category.name}
@@ -66,7 +46,9 @@ const SkillsSection = () => {
         </div>
 
         {/* Skills */}
-        <CategorySkills />
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-5 mt-10 px-5">
+          <CategorySkills selectedCategory={selectedCategory} />
+        </div>
       </div>
     </div>
   );
