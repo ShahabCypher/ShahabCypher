@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
-
-import Loader from "src/components/modules/Loader";
+import { ThreeBackground } from "components/three";
+import Loader from "components/modules/Loader";
 
 const Layout = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -15,13 +15,17 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
+      <ThreeBackground />
+
       {isLoading ? (
         <Loader />
       ) : (
         <>
           <Header />
-          <main className="flex-grow max-w-screen mx-auto">{children}</main>
+          <main className="flex-grow max-w-screen mx-auto relative z-10">
+            {children}
+          </main>
           <Footer />
         </>
       )}

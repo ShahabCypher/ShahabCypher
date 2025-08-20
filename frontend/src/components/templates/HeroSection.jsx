@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col lg:flex-row items-center lg:justify-around lg:min-h-[calc(100vh-5rem)] w-full"
+      className="flex flex-col lg:flex-row items-center lg:justify-around lg:min-h-[calc(100vh-5rem)] w-full relative z-10"
     >
       <div className="flex flex-col justify-center items-center h-full w-full lg:w-2/5">
         <h1 className="text-6xl lg:text-7xl font-bold my-15 lg:mt-0 select-none">

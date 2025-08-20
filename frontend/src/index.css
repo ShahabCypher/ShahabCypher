@@ -53,3 +53,16 @@
   width: 0;
   background: transparent;
 }
+
+/* Animation for fallback background */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(100%);
+  }
+}
