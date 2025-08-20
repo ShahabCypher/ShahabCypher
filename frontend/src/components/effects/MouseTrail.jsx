@@ -4,7 +4,6 @@ import { useDeviceCapabilities } from "hooks/useDeviceCapabilities";
 
 const MouseTrail = () => {
   const [particles, setParticles] = useState([]);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { theme } = useTheme();
   const { isLowEnd, isMobile } = useDeviceCapabilities();
   const isDark = theme === "dark";
@@ -26,8 +25,6 @@ const MouseTrail = () => {
 
       const newX = e.clientX;
       const newY = e.clientY;
-
-      setMousePosition({ x: newX, y: newY });
 
       // Create new particle
       const newParticle = {
@@ -115,22 +112,6 @@ const MouseTrail = () => {
           }}
         />
       ))}
-
-      {/* Main cursor glow */}
-      <div
-        className="absolute rounded-full transition-all duration-100 ease-out"
-        style={{
-          left: mousePosition.x - 15,
-          top: mousePosition.y - 15,
-          width: 30,
-          height: 30,
-          background: `radial-gradient(circle, ${
-            isDark ? "rgba(0, 217, 255, 0.3)" : "rgba(3, 102, 214, 0.3)"
-          }, transparent)`,
-          boxShadow: `0 0 20px ${isDark ? "#00d9ff" : "#0366d6"}`,
-          transform: "translate3d(0, 0, 0)",
-        }}
-      />
     </div>
   );
 };

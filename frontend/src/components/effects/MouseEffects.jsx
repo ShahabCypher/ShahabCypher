@@ -1,7 +1,6 @@
 import { useDeviceCapabilities } from "hooks/useDeviceCapabilities";
 import MouseTrail from "./MouseTrail";
 import RippleEffect from "./RippleEffect";
-import MouseGlow from "./MouseGlow";
 
 const MouseEffects = () => {
   const { isMobile, isLowEnd } = useDeviceCapabilities();
@@ -11,9 +10,6 @@ const MouseEffects = () => {
 
   return (
     <>
-      {/* Subtle glow effect - shown on all capable devices */}
-      <MouseGlow />
-
       {/* Particle trail - only on high-end devices */}
       {!isLowEnd && <MouseTrail />}
 
