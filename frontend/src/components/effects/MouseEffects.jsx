@@ -9,13 +9,13 @@ const MouseEffects = () => {
   if (isMobile) return null;
 
   return (
-    <>
+    <div className="z-60">
       {/* Particle trail - only on high-end devices */}
       {!isLowEnd && <MouseTrail />}
 
       {/* Click ripples */}
       <RippleEffect />
-    </>
+    </div>
   );
 };
 
