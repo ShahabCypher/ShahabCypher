@@ -44,24 +44,24 @@ const Header = () => {
         handleSmoothScroll(e, to);
         if (onClick) onClick();
       }}
-      className="hover:text-professional-blue dark:hover:text-cyber-blue block py-2 md:py-0"
+      className="hover:text-professional-blue dark:hover:text-cyber-blue block py-2 md:py-0 transition-all duration-300"
     >
       {label}
     </a>
   );
 
   return (
-    <header className="sticky top-0 z-50 h-20 shadow-[0_5px_15px_0] shadow-professional-blue/50 dark:shadow-cyber-blue/50">
-      <nav className="flex justify-between items-center h-20 bg-white dark:bg-void-black select-none transition-all duration-300 max-w-screen-2xl mx-auto ">
+    <header className="sticky top-0 z-50 h-20 shadow-backdrop backdrop-blur-md">
+      <nav className="flex justify-between items-center h-20 bg-white/30 dark:bg-void-black/30 backdrop-blur-md border-b border-blight/50 dark:border-bdark/50 select-none transition-all duration-300 max-w-screen-2xl mx-auto">
         {/* Logo */}
-        <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider">
+        <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider text-shadow-glow">
           <Link to="/">Cypher</Link>
         </h1>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-10 items-center text-lg">
           {navigationItems.map(({ to, label }) => (
-            <li key={to}>
+            <li key={to} className="text-shadow-enhanced">
               <NavLink to={to} label={label} />
             </li>
           ))}
@@ -70,7 +70,7 @@ const Header = () => {
         {/* Desktop Theme Toggle */}
         <button
           onClick={toggleTheme}
-          className="hidden md:block mr-4 md:mr-10 md:ml-20 cursor-pointer transition-colors duration-200"
+          className="hidden md:block mr-4 md:mr-10 md:ml-20 cursor-pointer transition-all duration-200 hover:scale-110 shadow-enhanced p-2 rounded-lg bg-light-gray/50 dark:bg-card-dark/50 backdrop-blur-sm"
           aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
         >
           {theme === "dark" ? <Sun size={30} /> : <Moon size={30} />}
@@ -79,7 +79,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggle}
-          className={`md:hidden mr-4 p-2 transition-colors duration-200 ${
+          className={`md:hidden mr-4 p-2 transition-all duration-200 hover:scale-110 shadow-enhanced rounded-lg bg-light-gray/50 dark:bg-card-dark/50 backdrop-blur-sm ${
             isOpen ? "z-50" : "z-0"
           }`}
           aria-label={isOpen ? "Close menu" : "Open menu"}
@@ -91,7 +91,7 @@ const Header = () => {
         {/* Mobile Menu Overlay */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-white/50 dark:bg-black/50 z-30 md:hidden"
+            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 md:hidden"
             onClick={close}
             aria-hidden="true"
           />
@@ -101,9 +101,9 @@ const Header = () => {
         <div
           className={`
           fixed top-0 right-0 h-full w-80 max-w-[85vw]
-          dark:bg-void-black bg-white
+          bg-white/95 dark:bg-void-black/95 backdrop-blur-md
           transform transition-transform duration-300 ease-in-out z-40
-          md:hidden shadow-xl
+          md:hidden shadow-backdrop border-l border-blight/50 dark:border-bdark/50
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
         >
@@ -112,20 +112,22 @@ const Header = () => {
             <div className="pt-7 absolute top-0">
               <button
                 onClick={toggleTheme}
-                className="flex items-center gap-3 text-lg cursor-pointer transition-colors duration-200"
+                className="flex items-center gap-3 text-lg cursor-pointer transition-all duration-200 hover:scale-105 text-shadow-enhanced shadow-enhanced p-3 rounded-lg bg-light-gray/50 dark:bg-card-dark/50 backdrop-blur-sm"
                 aria-label={`Switch to ${
                   theme === "dark" ? "light" : "dark"
                 } mode`}
               >
                 {theme === "dark" ? <Sun size={24} /> : <Moon size={24} />}
-                {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                <span className="text-shadow-enhanced">
+                  {theme === "dark" ? "Light Mode" : "Dark Mode"}
+                </span>
               </button>
             </div>
 
             {/* Mobile Navigation Links */}
             <ul className="flex flex-col gap-6 text-lg">
               {navigationItems.map(({ to, label }) => (
-                <li key={to}>
+                <li key={to} className="text-shadow-enhanced">
                   <NavLink to={to} label={label} onClick={close} />
                 </li>
               ))}

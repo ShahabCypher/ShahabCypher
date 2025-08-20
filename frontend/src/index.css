@@ -21,9 +21,23 @@
   --color-medium-gray: #656d76; /* Text Secondary */
   --color-blight: #d1d9e0; /* Border */
 
-  /* Shadows */
+  /* Enhanced Shadows for 3D Background Readability */
   --shadow-hero-card: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   --shadow-base: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  --shadow-enhanced: 0 4px 20px 0 rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-enhanced-dark: 0 4px 20px 0 rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-text-light: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 0, 0, 0.1);
+  --shadow-text-dark: 0 1px 3px rgba(0, 0, 0, 0.7), 0 0 8px rgba(0, 0, 0, 0.3);
+  --shadow-glow-blue: 0 0 20px rgba(3, 102, 214, 0.3),
+    0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-glow-cyan: 0 0 20px rgba(0, 217, 255, 0.3),
+    0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-backdrop: 0 8px 32px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-backdrop-dark: 0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.02);
 
   /* Breakpoints */
   --breakpoint-tab: 950px;
@@ -64,6 +78,48 @@ body {
   * {
     cursor: auto !important;
   }
+}
+
+/* Enhanced text shadow utilities for 3D background readability */
+.text-shadow-enhanced {
+  text-shadow: var(--shadow-text-light);
+}
+
+.dark .text-shadow-enhanced {
+  text-shadow: var(--shadow-text-dark);
+}
+
+.text-shadow-glow {
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark .text-shadow-glow {
+  text-shadow: 0 0 15px rgba(0, 217, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Enhanced box shadow utilities for better component visibility */
+.shadow-enhanced {
+  box-shadow: var(--shadow-enhanced);
+}
+
+.dark .shadow-enhanced {
+  box-shadow: var(--shadow-enhanced-dark);
+}
+
+.shadow-backdrop {
+  box-shadow: var(--shadow-backdrop);
+}
+
+.dark .shadow-backdrop {
+  box-shadow: var(--shadow-backdrop-dark);
+}
+
+.shadow-glow-blue {
+  box-shadow: var(--shadow-glow-blue);
+}
+
+.shadow-glow-cyan {
+  box-shadow: var(--shadow-glow-cyan);
 }
 
 /* Animation for fallback background */

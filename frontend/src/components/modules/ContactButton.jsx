@@ -20,11 +20,11 @@ const ContactButton = forwardRef(
 
     const variants = {
       primary:
-        "bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green text-white dark:text-dark-gray shadow-hero-card hover:shadow-professional-blue dark:hover:shadow-cyber-blue focus:ring-professional-blue dark:focus:ring-cyber-blue",
+        "bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green text-white dark:text-dark-gray shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan focus:ring-professional-blue dark:focus:ring-cyber-blue backdrop-blur-sm border border-professional-blue/30 dark:border-cyber-blue/30",
       secondary:
-        "bg-light-gray dark:bg-card-dark text-dark-gray dark:text-soft-white shadow-hero-card hover:shadow-professional-blue dark:hover:shadow-cyber-blue focus:ring-professional-blue dark:focus:ring-cyber-blue",
+        "bg-light-gray/80 dark:bg-card-dark/80 backdrop-blur-sm text-dark-gray dark:text-soft-white shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan focus:ring-professional-blue dark:focus:ring-cyber-blue border border-blight/30 dark:border-bdark/30",
       outline:
-        "border-2 border-professional-blue dark:border-cyber-blue text-professional-blue dark:text-cyber-blue hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white focus:ring-professional-blue dark:focus:ring-cyber-blue",
+        "border-2 border-professional-blue dark:border-cyber-blue text-professional-blue dark:text-cyber-blue hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white focus:ring-professional-blue dark:focus:ring-cyber-blue backdrop-blur-sm shadow-enhanced",
     };
 
     const sizes = {

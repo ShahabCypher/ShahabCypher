@@ -188,10 +188,10 @@ const CategorySkills = ({ selectedCategory }) => {
       {filteredSkills.map((skill) => (
         <div
           key={skill.name}
-          className="flex items-center lg:justify-center lg:flex-col gap-2 bg-light-gray dark:bg-card-dark p-2 rounded-lg shadow-base hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-all duration-300 select-none h-fit lg:h-30"
+          className="flex items-center lg:justify-center lg:flex-col gap-2 bg-light-gray/80 dark:bg-card-dark/80 backdrop-blur-sm p-2 rounded-lg shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan transition-all duration-300 select-none h-fit lg:h-30 border border-blight/30 dark:border-bdark/30"
         >
-          {skill.icon}
-          <span className="text-sm lg:text-base lg:font-medium lg:mt-2">
+          <div className="drop-shadow-lg">{skill.icon}</div>
+          <span className="text-sm lg:text-base lg:font-medium lg:mt-2 text-shadow-enhanced">
             {skill.name}
           </span>
         </div>

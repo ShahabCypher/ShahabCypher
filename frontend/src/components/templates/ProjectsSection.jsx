@@ -118,13 +118,13 @@ const ProjectsSection = () => {
     >
       {/* Header */}
       <div className="text-center mb-10">
-        <h1 className="text-4xl lg:text-5xl font-bold mb-5">
+        <h1 className="text-4xl lg:text-5xl font-bold mb-5 text-shadow-glow">
           My{" "}
-          <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent text-shadow-none">
             Projects
           </span>
         </h1>
-        <p className="text-medium-gray dark:text-muted-gray text-center text-sm lg:text-base px-5 max-w-2xl mx-auto">
+        <p className="text-medium-gray dark:text-muted-gray text-center text-sm lg:text-base px-5 max-w-2xl mx-auto text-shadow-enhanced">
           A showcase of my development work - from full-stack web applications
           to bot development projects.
         </p>

@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div
       key={project.id}
-      className="flex flex-col flex-shrink-0 w-80 h-[570px] bg-white dark:bg-card-dark rounded-xl shadow-base hover:shadow-professional-blue dark:hover:shadow-cyber-blue transition-all duration-300 group overflow-hidden"
+      className="flex flex-col flex-shrink-0 w-80 h-[570px] bg-white/80 dark:bg-card-dark/80 backdrop-blur-md rounded-xl shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan transition-all duration-300 group overflow-hidden border border-blight/30 dark:border-bdark/30"
     >
       {/* Project Image */}
       <div className="relative overflow-hidden">
@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
             project.upcoming ? "absolute" : "hidden"
           } top-0 left-0 w-full h-full flex items-center justify-center backdrop-blur-[2px]`}
         >
-          <p className="text-white text-xl font-semibold text-shadow-[1px_1px_1px_#000,_-1px_-1px_1px_#000,_-1px_1px_1px_#000,_1px_-1px_1px_#000]">
+          <p className="text-white text-xl font-semibold text-shadow-[2px_2px_4px_rgba(0,0,0,0.8)] drop-shadow-2xl">
             Upcoming
           </p>
         </div>
@@ -29,16 +29,16 @@ const ProjectCard = ({ project }) => {
       <div className="flex flex-col flex-grow p-6">
         {/* Title and Category */}
         <div className="mb-4">
-          <h3 className="font-bold text-lg text-dark-gray dark:text-soft-white group-hover:text-professional-blue dark:group-hover:text-cyber-blue transition-colors mb-1">
+          <h3 className="font-bold text-lg text-dark-gray dark:text-soft-white group-hover:text-professional-blue dark:group-hover:text-cyber-blue transition-colors mb-1 text-shadow-enhanced">
             {project.title}
           </h3>
-          <span className="text-xs text-medium-gray dark:text-muted-gray uppercase tracking-wide">
+          <span className="text-xs text-medium-gray dark:text-muted-gray uppercase tracking-wide text-shadow-enhanced">
             {project.category}
           </span>
         </div>
 
         {/* Description */}
-        <p className="text-sm text-medium-gray dark:text-muted-gray leading-relaxed mb-4">
+        <p className="text-sm text-medium-gray dark:text-muted-gray leading-relaxed mb-4 text-shadow-enhanced">
           {project.description}
         </p>
 
