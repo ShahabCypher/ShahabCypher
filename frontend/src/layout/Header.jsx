@@ -51,8 +51,8 @@ const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 h-20 shadow-backdrop backdrop-blur-md">
-      <nav className="flex justify-between items-center h-20 bg-white/30 dark:bg-void-black/30 backdrop-blur-md border-b border-blight/50 dark:border-bdark/50 select-none transition-all duration-300 max-w-screen-2xl mx-auto">
+    <header className="sticky top-0 z-50 h-20 shadow-backdrop backdrop-blur-md border-b border-blight/50 dark:border-bdark/50">
+      <nav className="flex justify-between items-center h-20 bg-white/30 dark:bg-void-black/30 backdrop-blur-md select-none transition-all duration-300 max-w-screen-2xl mx-auto">
         {/* Logo */}
         <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider text-shadow-glow">
           <Link to="/">Cypher</Link>
