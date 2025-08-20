@@ -10,9 +10,9 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="flex flex-col lg:flex-row items-center lg:justify-around lg:min-h-[calc(100vh-5rem)] w-full max-w-screen-2xl relative z-10"
+      className="flex flex-col lg:flex-row items-center lg:justify-around lg:mt-6 w-full max-w-screen-2xl relative z-10"
     >
-      <div className="flex flex-col justify-center items-center h-full w-full lg:w-2/5">
+      <div className="flex flex-col justify-center items-center w-full lg:w-2/5">
         <h1 className="text-6xl lg:text-7xl font-bold my-15 lg:mt-0 select-none text-shadow-glow">
           I'm{" "}
           <span className="bg-gradient-to-r from-professional-blue to-success-green dark:from-cyber-blue dark:to-matrix-green bg-clip-text text-transparent font-[UnifrakturMaguntia] tracking-wider text-shadow-none">
@@ -24,7 +24,7 @@ const HeroSection = () => {
         <div className="flex items-center gap-5">
           {techIcons.map(({ icon: Icon, name }) => (
             <div key={name} className="flex flex-col items-center">
-              <span className="bg-light-gray/80 dark:bg-card-dark/80 backdrop-blur-sm p-5 rounded-xl text-professional-blue dark:text-cyber-blue shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan transition-all duration-300 border border-blight/30 dark:border-bdark/30">
+              <span className="bg-light-gray/80 dark:bg-card-dark/80 backdrop-blur-sm p-5 rounded-xl text-professional-blue dark:text-cyber-blue shadow-enhanced hover:shadow-glow-blue dark:hover:shadow-glow-cyan transition-all duration-300 border border-blight/30 dark:border-bdark/30 hover:bg-professional-blue hover:text-white dark:hover:bg-cyber-blue dark:hover:text-dark-gray">
                 <Icon size={30} />
               </span>
               <span className="text-medium-gray dark:text-muted-gray text-xs mt-3 select-none text-shadow-enhanced">

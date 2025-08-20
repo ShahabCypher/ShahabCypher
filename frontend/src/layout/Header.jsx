@@ -51,8 +51,8 @@ const Header = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 h-20 shadow-backdrop backdrop-blur-md border-b border-blight/50 dark:border-bdark/50">
-      <nav className="flex justify-between items-center h-20 bg-white/30 dark:bg-void-black/30 backdrop-blur-md select-none transition-all duration-300 max-w-screen-2xl mx-auto">
+    <header className="fixed top-0 w-full z-50 h-20 shadow-backdrop backdrop-blur-md border-b border-blight/50 dark:border-bdark/50">
+      <nav className="max-w-screen-2xl mx-auto flex justify-between items-center h-20 bg-white/30 dark:bg-void-black/30 backdrop-blur-md select-none transition-all duration-300">
         {/* Logo */}
         <h1 className="text-3xl font-semibold ml-4 md:ml-10 z-20 w-30 font-[UnifrakturMaguntia] tracking-wider text-shadow-glow">
           <Link to="/">Cypher</Link>
@@ -80,7 +80,7 @@ const Header = () => {
         <button
           onClick={toggle}
           className={`md:hidden mr-4 p-2 transition-all duration-200 hover:scale-110 shadow-enhanced rounded-lg bg-light-gray/50 dark:bg-card-dark/50 backdrop-blur-sm ${
-            isOpen ? "z-50" : "z-0"
+            isOpen ? "z-60" : "z-0"
           }`}
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
@@ -91,7 +91,7 @@ const Header = () => {
         {/* Mobile Menu Overlay */}
         {isOpen && (
           <div
-            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 md:hidden"
+            className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40 h-screen md:hidden"
             onClick={close}
             aria-hidden="true"
           />
@@ -100,9 +100,9 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         <div
           className={`
-          fixed top-0 right-0 h-full w-80 max-w-[85vw]
-          bg-white/95 dark:bg-void-black/95 backdrop-blur-md
-          transform transition-transform duration-300 ease-in-out z-40
+          fixed top-0 right-0 h-screen w-80 max-w-[85vw]
+        bg-white dark:bg-void-black
+          transform transition-transform duration-300 ease-in-out z-50
           md:hidden shadow-backdrop border-l border-blight/50 dark:border-bdark/50
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}

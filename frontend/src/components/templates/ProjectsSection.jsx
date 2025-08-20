@@ -153,7 +153,7 @@ const ProjectsSection = () => {
           style={{ scrollbarWidth: "none" }}
         >
           <div
-            className="flex items-stretch gap-6 px-5 py-2 lg:px-20 pb-5"
+            className="flex items-stretch gap-6 px-5 py-2 lg:px-20 pb-5 last:mr-3"
             style={{
               width: `${
                 projects.length * 320 + (projects.length - 1) * 24 + scrollWidth

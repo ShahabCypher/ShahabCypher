@@ -63,6 +63,12 @@
   border-color: #30363d;
 }
 
+html,
+body {
+  overflow-x: hidden !important;
+  position: relative;
+}
+
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;

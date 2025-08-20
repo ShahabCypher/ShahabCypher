@@ -27,7 +27,7 @@ const SocialIcons = ({ mobile = false }) => {
         <p className="text-medium-gray dark:text-muted-gray font-medium">
           You can {!mobile && "also "} reach me on:
         </p>
-        <div className="flex items-center gap-6 text-muted-gray dark:text-medium-gray mt-5 text-2xl">
+        <div className="flex items-center gap-6 text-muted-gray dark:text-medium-gray mt-5 text-2xl *:hover:text-professional-blue *:dark:hover:text-cyber-blue *:transition-all *:duration-300">
           <a href="https://github.com/ShahabCypher" target="_blank">
             <FaGithub />
           </a>

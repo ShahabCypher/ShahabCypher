@@ -74,7 +74,11 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3 mt-auto">
+        <div
+          className={`flex gap-3 mt-auto ${
+            project.upcoming ? "pointer-events-none opacity-50" : ""
+          }`}
+        >
           {project?.github && (
             <a
               href={project.github}
