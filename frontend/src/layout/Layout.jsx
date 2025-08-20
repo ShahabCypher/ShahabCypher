@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { ThreeBackground } from "components/three";
+import MouseEffects from "components/effects/MouseEffects";
 import Loader from "components/modules/Loader";
 
 const Layout = ({ children }) => {
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen relative">
       <ThreeBackground />
+      <MouseEffects />
 
       {isLoading ? (
         <Loader />

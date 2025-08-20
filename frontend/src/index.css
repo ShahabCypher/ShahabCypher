@@ -54,6 +54,36 @@
   background: transparent;
 }
 
+/* Custom cursor styles */
+* {
+  cursor: none !important;
+}
+
+/* Restore cursor for interactive elements */
+button,
+a,
+input,
+textarea,
+select,
+[role="button"] {
+  cursor: pointer !important;
+}
+
+/* Text cursor for text inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  cursor: text !important;
+}
+
+/* Default cursor for body on mobile devices */
+@media (hover: none) and (pointer: coarse) {
+  * {
+    cursor: auto !important;
+  }
+}
+
 /* Animation for fallback background */
 @keyframes pulse {
   0%,
