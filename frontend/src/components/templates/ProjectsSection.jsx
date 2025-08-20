@@ -114,7 +114,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center pt-25 w-full overflow-hidden"
+      className="flex flex-col items-center justify-center pt-25 w-full max-w-screen-2xl overflow-hidden"
     >
       {/* Header */}
       <div className="text-center mb-10">

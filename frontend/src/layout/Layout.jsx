@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       ) : (
         <>
           <Header />
-          <main className="flex-grow max-w-screen mx-auto relative z-10">
+          <main className="flex-grow flex flex-col items-center max-w-screen mx-auto relative z-10">
             {children}
           </main>
           <Footer />

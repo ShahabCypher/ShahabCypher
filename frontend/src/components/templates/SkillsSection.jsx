@@ -9,7 +9,7 @@ const SkillsSection = () => {
   return (
     <section
       id="stack"
-      className="flex flex-col items-center justify-center pt-25 w-full"
+      className="flex flex-col items-center justify-center pt-25 w-full max-w-screen-2xl"
     >
       <h1 className="text-4xl lg:text-5xl font-bold text-shadow-glow">
         My{" "}
