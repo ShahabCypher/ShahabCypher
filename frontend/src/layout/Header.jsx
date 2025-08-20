@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Moon, Sun, Menu, X } from "lucide-react";
+import { FaGithub, FaTelegram, FaInstagram, FaDiscord } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 import { useTheme } from "hooks/useTheme";
 import { useMobileMenu } from "hooks/useMobileMenu";
@@ -132,6 +134,30 @@ const Header = () => {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-10 w-full self-center">
+              <div className="border-t border-blight dark:border-bdark w-full h-1 "></div>
+              <div className="flex items-center justify-center gap-6 text-muted-gray dark:text-medium-gray mt-10 text-2xl *:hover:text-professional-blue *:dark:hover:text-cyber-blue *:transition-all *:duration-300">
+                <a href="https://github.com/ShahabCypher" target="_blank">
+                  <FaGithub />
+                </a>
+                <a href="https://t.me/ShahabCypher" target="_blank">
+                  <FaTelegram />
+                </a>
+                <a href="https://instagram.com/shahabcypher" target="_blank">
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://discordapp.com/users/654402138700644372"
+                  target="_blank"
+                >
+                  <FaDiscord />
+                </a>
+                <a href="https://x.com/ShahabCypher" target="_blank">
+                  <BsTwitterX />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
