@@ -1,6 +1,6 @@
 import Layout from "layout/Layout";
 import ThemeProvider from "contexts/ThemeContext";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import HomePage from "pages/HomePage";
 
@@ -10,6 +10,7 @@ const App = () => {
       <Layout>
         <Routes>
           <Route index element={<HomePage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>
     </ThemeProvider>
