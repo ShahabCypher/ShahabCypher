@@ -1,19 +1,31 @@
 import { FaGithub, FaTelegram, FaInstagram, FaDiscord } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
-const SocialIcons = () => {
+const SocialIcons = ({ mobile = false }) => {
   return (
-    <div className="w-full">
+    <div className={`w-full ${mobile ? "block lg:hidden" : "hidden lg:block"}`}>
       <div className="w-full flex justify-center items-center mt-5">
-        <div className="border-t border-blight dark:border-bdark w-2/5 mr-3"></div>
-        <span className="text-medium-gray dark:text-muted-gray text-sm font-medium">
+        <div
+          className={`border-t border-blight dark:border-bdark ${
+            mobile ? "w-2/5 mr-3" : "w-1/2"
+          }`}
+        ></div>
+        <span
+          className={`text-medium-gray dark:text-muted-gray text-sm font-medium ${
+            mobile ? "block" : "hidden"
+          }`}
+        >
           or
         </span>
-        <div className="border-t border-blight dark:border-bdark w-2/5 ml-3"></div>
+        <div
+          className={`border-t border-blight dark:border-bdark ${
+            mobile ? "w-2/5 ml-3" : "w-1/2"
+          }`}
+        ></div>
       </div>
       <div className="w-full flex flex-col justify-center items-center mt-6">
         <p className="text-medium-gray dark:text-muted-gray font-medium">
-          You can reach me on:
+          You can {!mobile && "also "} reach me on:
         </p>
         <div className="flex items-center gap-6 text-muted-gray dark:text-medium-gray mt-5 text-2xl">
           <a href="https://github.com/ShahabCypher" target="_blank">

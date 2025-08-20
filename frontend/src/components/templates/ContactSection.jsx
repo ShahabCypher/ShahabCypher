@@ -79,12 +79,13 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
+            <SocialIcons />
           </div>
 
           {/* Contact Form */}
           <ContactForm />
         </div>
-        <SocialIcons />
+        <SocialIcons mobile={true} />
       </div>
     </section>
   );
