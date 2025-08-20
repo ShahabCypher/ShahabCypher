@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <section
-      id="home"
+      id="cypher"
       className="flex flex-col lg:flex-row items-center lg:justify-around lg:mt-6 w-full max-w-screen-2xl relative z-10"
     >
       <div className="flex flex-col justify-center items-center w-full lg:w-2/5">

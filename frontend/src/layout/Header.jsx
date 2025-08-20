@@ -11,7 +11,7 @@ const Header = () => {
   const { isOpen, toggle, close } = useMobileMenu();
 
   const navigationItems = [
-    { to: "#home", label: "Home" },
+    { to: "#cypher", label: "Cypher" },
     { to: "#stack", label: "Tech Stack" },
     { to: "#projects", label: "Projects" },
     { to: "#contact", label: "Contact" },
@@ -21,7 +21,7 @@ const Header = () => {
     e.preventDefault();
     const element = document.querySelector(targetId);
     if (element) {
-      if (targetId === "#home") {
+      if (targetId === "#cypher") {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
