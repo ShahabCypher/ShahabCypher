@@ -44,7 +44,7 @@ const FormInput = forwardRef(
           className={`
           w-full px-4 py-3 rounded-xl
           bg-light-gray dark:bg-card-dark
-          border border-transparent
+          border border-blight dark:border-bdark
           text-dark-gray dark:text-soft-white
           placeholder-medium-gray dark:placeholder-muted-gray
           focus:outline-none focus:ring-2 focus:ring-professional-blue dark:focus:ring-cyber-blue

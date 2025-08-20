@@ -44,13 +44,13 @@ const FormTextarea = forwardRef(
           className={`
           w-full px-4 py-3 rounded-xl
           bg-light-gray dark:bg-card-dark
-          border border-transparent
+          border border-blight dark:border-bdark
           text-dark-gray dark:text-soft-white
           placeholder-medium-gray dark:placeholder-muted-gray
           focus:outline-none focus:ring-2 focus:ring-professional-blue dark:focus:ring-cyber-blue
           focus:border-transparent
           transition-all duration-300
-          resize-vertical
+          resize-none
           disabled:opacity-50 disabled:cursor-not-allowed
           ${error ? "ring-2 ring-red-500 border-red-500" : ""}
           ${className}

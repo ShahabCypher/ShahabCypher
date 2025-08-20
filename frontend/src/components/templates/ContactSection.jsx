@@ -14,14 +14,10 @@ import useContactForm from "hooks/useContactForm";
 import contactService from "services/contactService";
 
 const ContactSection = () => {
-  // Handle form submission
   const handleFormSubmit = async (formData) => {
-    // Sanitize data before submission
     const sanitizedData = contactService.sanitizeContactData(formData);
 
-    // Submit to API
     const response = await contactService.submitContactForm(sanitizedData);
-
     return response;
   };
 
@@ -114,7 +110,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-light-gray dark:bg-card-dark p-8 rounded-2xl shadow-hero-card">
+          <div className="bg-light-gray dark:bg-card-dark p-8 rounded-2xl shadow-hero-card transition-all duration-300">
             <form onSubmit={handleSubmit} className="space-y-6">
               <FormInput
                 label="Name"
@@ -125,7 +121,6 @@ const ContactSection = () => {
                 onBlur={handleBlur}
                 error={errors.name}
                 placeholder="Your full name"
-                required
                 disabled={isSubmitting}
               />
 
@@ -138,7 +133,6 @@ const ContactSection = () => {
                 onBlur={handleBlur}
                 error={errors.email}
                 placeholder="your.email@example.com"
-                required
                 disabled={isSubmitting}
               />
 
@@ -151,7 +145,6 @@ const ContactSection = () => {
                 error={errors.message}
                 placeholder="Tell me about your project or just say hello..."
                 rows={5}
-                required
                 disabled={isSubmitting}
               />
 
