@@ -65,7 +65,7 @@ const ContactForm = () => {
 
         {/* Submit Status Messages */}
         {submitStatus === "success" && (
-          <div className="flex items-center gap-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl">
+          <div className="flex items-center gap-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl transition-all duration-300">
             <CheckCircle
               className="text-green-600 dark:text-green-400"
               size={20}
@@ -77,7 +77,7 @@ const ContactForm = () => {
         )}
 
         {submitStatus === "error" && (
-          <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl">
+          <div className="flex items-center gap-3 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl transition-all duration-300">
             <AlertCircle className="text-red-600 dark:text-red-400" size={20} />
             <p className="text-red-700 dark:text-red-300 text-sm">
               Failed to send message. Please try again later.

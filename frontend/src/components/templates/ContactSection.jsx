@@ -38,7 +38,7 @@ const ContactSection = () => {
             {/* Contact Features */}
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue">
+                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue transition-all duration-300 hover:bg-professional-blue hover:text-soft-white dark:hover:bg-cyber-blue dark:hover:text-dark-gray">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -52,7 +52,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue">
+                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue transition-all duration-300 hover:bg-professional-blue hover:text-soft-white dark:hover:bg-cyber-blue dark:hover:text-dark-gray">
                   <User size={24} />
                 </div>
                 <div>
@@ -66,7 +66,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue">
+                <div className="bg-light-gray dark:bg-card-dark p-3 rounded-xl text-professional-blue dark:text-cyber-blue transition-all duration-300 hover:bg-professional-blue hover:text-soft-white dark:hover:bg-cyber-blue dark:hover:text-dark-gray">
                   <MessageSquare size={24} />
                 </div>
                 <div>
