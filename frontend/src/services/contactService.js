@@ -20,7 +20,6 @@ class ContactService {
 
       return await response.data;
     } catch (error) {
-      console.log(error);
       throw new Error("Failed to send message. Please try again later.");
     }
   }
