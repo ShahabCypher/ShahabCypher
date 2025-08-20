@@ -61,6 +61,8 @@
 
 /* Restore cursor for interactive elements */
 button,
+button > svg,
+button > svg > path,
 a,
 input,
 textarea,
