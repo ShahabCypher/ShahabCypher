@@ -1,10 +1,11 @@
 import { Mail, User, MessageSquare } from "lucide-react";
 
 import ContactForm from "components/modules/ContactForm";
+import SocialIcons from "components/modules/SocialIcons";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="w-full py-20 px-4">
+    <section id="contact" className="w-full pt-20 pb-10 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -83,6 +84,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <ContactForm />
         </div>
+        <SocialIcons />
       </div>
     </section>
   );
