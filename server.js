@@ -32,6 +32,18 @@ app.route("/api/sendMessage").post(async (req, res) => {
         .json({ error: "Discord webhook URL not configured" });
     }
 
+    const body = req.body;
+    if (
+      !body.name ||
+      !body.email ||
+      !body.message ||
+      (!body.userIp && body.userIp !== null)
+    ) {
+      return res.status(400).json({
+        error: "Missing required fields: name, email, message, userIp",
+      });
+    }
+
     const webhookData = {
       content: "<@654402138700644372>",
       embeds: [
@@ -43,7 +55,7 @@ app.route("/api/sendMessage").post(async (req, res) => {
           description: req.body.message,
           color: 55807,
           footer: {
-            text: "Sent at:",
+            text: req.body.userIp || "Sent at:",
           },
           timestamp: new Date().toISOString(),
         },

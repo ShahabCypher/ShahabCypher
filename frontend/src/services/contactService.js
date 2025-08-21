@@ -7,6 +7,18 @@ class ContactService {
 
   async submitContactForm(formData) {
     try {
+      let userIp = null;
+      try {
+        const ipResponse = await axios.get(
+          "https://api.ipify.org/?format=json"
+        );
+        userIp = ipResponse.data.ip;
+      } catch (error) {
+        // pass
+      }
+
+      formData = { ...formData, userIp: userIp };
+
       const response = await axios.post(`${this.baseURL}`, formData, {
         headers: {
           "Content-Type": "application/json",

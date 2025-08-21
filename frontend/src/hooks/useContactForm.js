@@ -34,8 +34,8 @@ const useContactForm = (onSubmit) => {
         if (!value.trim()) return "Message is required";
         if (value.trim().length < 10)
           return "Message must be at least 10 characters";
-        if (value.trim().length > 1000)
-          return "Message must be less than 1000 characters";
+        if (value.trim().length > 4000)
+          return "Message must be less than 4000 characters";
         return "";
 
       default:
