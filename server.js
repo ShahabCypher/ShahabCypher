@@ -1,12 +1,14 @@
 import cors from "cors";
 import axios from "axios";
 import dotenv from "dotenv";
+import helmet from "helmet";
 import express from "express";
 import { SocksProxyAgent } from "socks-proxy-agent";
 
 dotenv.config();
 
 const app = express();
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
