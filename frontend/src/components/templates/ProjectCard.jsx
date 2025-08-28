@@ -82,6 +82,7 @@ const ProjectCard = ({ project }) => {
           {project?.github && (
             <a
               href={project.github}
+              target="_blank"
               className="flex items-center justify-center gap-2 flex-1 bg-light-gray dark:bg-void-black text-professional-blue dark:text-cyber-blue py-2 px-3 rounded-lg hover:bg-professional-blue dark:hover:bg-cyber-blue hover:text-white dark:hover:text-dark-gray transition-all duration-300 text-sm font-medium"
             >
               <FaGithub size={16} />
@@ -90,6 +91,7 @@ const ProjectCard = ({ project }) => {
           )}
           <a
             href={project.url}
+            target="_blank"
             className="flex items-center justify-center gap-2 flex-1 bg-professional-blue dark:bg-cyber-blue text-white dark:text-dark-gray py-2 px-3 rounded-lg hover:bg-success-green dark:hover:bg-matrix-green transition-all duration-300 text-sm font-medium"
           >
             <ExternalLink size={16} />
