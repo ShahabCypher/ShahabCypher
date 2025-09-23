@@ -20,7 +20,7 @@ const ProjectsSection = () => {
         "Filtering & Sorting",
         "View Property Details",
       ],
-      url: "https://sunrise.shahabcypher.xyz",
+      url: `https://sunrise.${import.meta.env.VITE_DOMAIN}`,
       upcoming: false,
     },
     {
