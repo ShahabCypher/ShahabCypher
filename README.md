@@ -8,7 +8,7 @@
 
 **Hey! I'm Cypher** 👋
 
-I started my **development journey** in **2019** when I joined Discord, initially focusing on creating **private Discord bots** to enhance server experiences. Over the past **5+ years**, my passion for development has evolved, and I now specialize as a **MERN Full-Stack Developer**, building modern web applications with cutting-edge technologies.
+I started my **development journey** in **2019** when I joined Discord, initially focusing on creating **private Discord bots** to enhance server experiences. Over the past **5+ years**, my passion for development has evolved, and I now specialize as a **Full-Stack Web Developer**, building modern web applications with cutting-edge technologies.
 - 🌐 Check out my website: https://ShahabCypher.ir
 
 ---
@@ -17,10 +17,11 @@ I started my **development journey** in **2019** when I joined Discord, initiall
 
 <div align="center">
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Next](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Material-UI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
