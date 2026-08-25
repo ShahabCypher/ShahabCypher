@@ -38,7 +38,7 @@ I started my **development journey** in **2019** when I joined Discord, initiall
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ShahabCypher&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ShahabCypher&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=ffffff)
+![GitHub Stats](https://github-stats-extended.vercel.app/api?username=ShahabCypher&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff) ![Top Languages](https://github-stats-extended.vercel.app/api/top-langs/?username=ShahabCypher&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=ffffff)
 
 </div>
 
